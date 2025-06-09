@@ -24,7 +24,7 @@ Spring Boot 3.5.0 / Spring Security 6.5.0 / JDK 21 기준으로 리팩토링한 
 
 > 단, Spring Security 설정은 아직 반영되지 않았으며,  
 > 공식 카페에서도 "추후 업로드 예정"임이 공지되어 있습니다.  
-> 📎 [공지글 보기 (백견불여일타 카페)]([https://cafe.naver.com/springJpa/555](https://cafe.naver.com/f-e/cafes/29707479/articles/867?menuid=30&referrerAllArticles=false))
+> 📎 [공지글 보기 (백견불여일타 카페)](https://cafe.naver.com/f-e/cafes/29707479/articles/867?menuid=30&referrerAllArticles=false)
 > 본 프로젝트는 해당 예제를 기반으로 학습하되,  
 > **Spring Security 6.5.0 기준 로그아웃 처리 및 보안 설정을 직접 보완**하였습니다.
 
