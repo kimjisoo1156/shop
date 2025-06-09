@@ -38,7 +38,6 @@ Spring Boot 3.5.0 / Spring Security 6.5.0 / JDK 21 기준으로 리팩토링한 
 
 | 변경 항목 | 설명 |
 |-----------|------|
-| 🔐 **로그아웃 처리 방식 변경** | Spring Security 6.x부터 `GET /logout` 방식이 기본 미지원됨에 따라, `a` 태그 대신 `form POST` 방식으로 수정 |
-| 🔐 **로그아웃 설정 코드 변경** | 기존 `.logoutRequestMatcher(...)` → 최신 `.logoutUrl()` 방식으로 변경 |
-| ⚙️ **DSL API 리팩토링** | `.authorizeRequests()` → `.authorizeHttpRequests()` 등 최신 DSL 스타일로 전환 |
+| 🔐 **로그아웃 설정 코드 변경** | 기존 `.logoutRequestMatcher(...)` → 최신 `.logoutUrl(...)` 방식으로 변경 |
+| 🔐 **로그아웃 처리 방식 변경** | Thymeleaf의 `<a href="/logout">` 대신 `form POST 방식 + CSRF 토큰 포함` 방식으로 수정 (CSRF 대응용) |
 
