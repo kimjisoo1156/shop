@@ -4,7 +4,7 @@
 Spring Boot 3.5.0 / Spring Security 6.5.0 / JDK 21 기준으로 리팩토링한 학습용 실습 프로젝트 입니다.
 
 ## 📚 학습 기간
-- **2025년 6월 1일 ~ 2025년 6월 13일
+- 2025년 6월 1일 ~ 2025년 6월 13일
 
 ## 📚 학습 목표
 
@@ -21,8 +21,9 @@ Spring Boot 3.5.0 / Spring Security 6.5.0 / JDK 21 기준으로 리팩토링한 
 
 > 도서 예제는 Spring Boot 2.5.2 / Maven 기반이었으며,  
 > 저자가 Spring Boot 3 대응 GitHub 예제를 별도로 제공하고 있습니다.  
-> 본 프로젝트는 해당 예제를 기반으로,  
-> **Spring Security 6.x 대응을 위한 보완 및 커스터마이징을 추가 적용**하였습니다.
+> 📎 [roadbook2/shop - GitHub](https://github.com/roadbook2/shop)
+> 본 프로젝트는 해당 Spring Boot 3 버전 예제를 기반으로 학습하되,  
+> Spring Security 6.5.0 대응을 위해 **로그아웃 처리 방식 및 시큐리티 설정 코드를 추가 보완**하였습니다.
 
 | 항목             | 내 환경 (마이그레이션 후) |
 |------------------|----------------------------|
