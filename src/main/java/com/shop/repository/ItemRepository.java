@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ItemRepository extends JpaRepository<Item,Long>, QuerydslPredicateExecutor<Item> {
+public interface ItemRepository extends JpaRepository<Item,Long>, QuerydslPredicateExecutor<Item> ,ItemRepositoryCustom{
 
 
     //select
@@ -30,5 +30,7 @@ public interface ItemRepository extends JpaRepository<Item,Long>, QuerydslPredic
     //db sql , 특정 데베에 종속
     @Query(value = "select * from item i where i.item_detail like %:itemDetail% order by i.price desc", nativeQuery = true)
     List<Item> findByItemDetailByNative(@Param("itemDetail") String itemDetail);
+
+
 
 }

@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Table(name="member")
 @Getter @Setter
 @ToString
-public class Member {
+public class Member extends BaseEntity{
     //회원정보를 저장하는 엔티티
 
     @Id
@@ -39,7 +39,7 @@ public class Member {
         member.setAddress(memberFormDto.getAddress());
         String password = passwordEncoder.encode(memberFormDto.getPassword());
         member.setPassword(password);
-        member.setRole(Role.USER);
+        member.setRole(Role.ADMIN);
         return member;
     }
 

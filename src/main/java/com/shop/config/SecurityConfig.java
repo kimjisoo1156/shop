@@ -38,8 +38,8 @@ public class SecurityConfig {
                         .usernameParameter("email")
                         .failureHandler(new FormLoginAuthenticationFailureHandler())
                 ).logout(logout -> logout
-                        .logoutUrl("/members/logout")         // ✅ 로그아웃 경로
-                        .logoutSuccessUrl("/")                // ✅ 성공 후 이동
+                        .logoutUrl("/members/logout")         //  로그아웃 경로
+                        .logoutSuccessUrl("/")                //  성공 후 이동
                         .invalidateHttpSession(true)
                         .deleteCookies("JSESSIONID")
 
